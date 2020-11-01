@@ -1,0 +1,403 @@
+//------------timer----------------
+.timer {
+    padding: 50px 0;
+    &inner {
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 29px;
+        letter-spacing: 0.07em;
+        color: #ee4b39;
+    }
+
+    &__items {
+        padding-top: 60px;
+        margin: 0 auto;
+        display: flex;
+        max-width: 40%;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.timer__name {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+}
+.timer__value {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 43px;
+    letter-spacing: 0.07em;
+    margin-bottom: 10px;
+}
+
+.order {
+}
+.form-order {
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+    max-width: 870px;
+    min-height: 430px;
+    background: #ffffff;
+    border: 1px solid #bebebd;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    &__inf {
+        width: 320px;
+        background: rgba(255, 245, 228, 0.49);
+        position: relative;
+    }
+
+    &__title {
+        padding: 20px 0 0 35px;
+        font-weight: bold;
+        font-size: 2.25rem;
+        line-height: 36px;
+        letter-spacing: 0.09em;
+        color: #1c1e2a;
+    }
+
+    &__subtitle {
+        padding: 20px 0 0 35px;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 21px;
+        letter-spacing: 0.09em;
+        color: #bebebd;
+    }
+
+    &__img {
+        img {
+            position: absolute;
+            bottom: 50px;
+            left: 70px;
+        }
+    }
+
+    &__price {
+        padding: 14px;
+        margin-top: 30px;
+        background: #c76e64;
+        border-radius: 0px 10px 10px 0px;
+        width: 180px;
+        font-weight: bold;
+        font-size: 1.75rem;
+        line-height: 33px;
+        color: #ffffff;
+        span {
+            padding-left: 20px;
+        }
+    }
+
+    &__booking {
+        padding-left: 100px;
+    }
+
+    &__booking-title {
+        margin-top: 48px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 30px;
+
+        color: #626570;
+    }
+
+    &__booking-inputs {
+        margin-top: 30px;
+    }
+    &__booking-input + div {
+        margin-top: 30px;
+    }
+    &__booking-input {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        label {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 21px;
+            color: rgba(28, 30, 42, 0.5);
+           span {
+                display: none;
+            }
+        }
+
+        input {
+            padding: 8px 22px;
+            width: 100%;
+            height: 42px;
+            border: 1px solid #bebebd;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+            font-weight: 300;
+            font-size: 1.125rem;
+            line-height: 21px;
+            outline: none;
+            color: #1c1e2a;
+        }
+    }
+
+    &__booking-btn {
+        margin: 40px auto 0 auto;
+        button{
+            width: 100%;
+            height: 100%;
+            background: #1c1e2a;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 21px;
+            color: #ffffff;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+        }
+    }
+}
+.btn--black {
+    width: 299px;
+    height: 50px;
+    background: #1c1e2a;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 21px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    }
+}
+.form {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+    .timer {
+        &__title {
+            font-size: 2.25rem;
+            line-height: 38px;
+        }
+        &__items {
+            max-width: 60%;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .form-order {
+        flex-direction: column;
+        padding-bottom: 50px;
+        &__inf {
+            width: 100%;
+            height: 250px;
+        }
+        &__img {
+            img {
+                bottom: 50px;
+                left: 250px;
+            }
+        }
+        &__booking {
+            padding-left: 0;
+        }
+
+        &__booking-title {
+            margin-bottom: 30px;
+            span {
+                margin: 0 0 0 60px;
+            }
+        }
+        &__booking-inputs {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__booking-input {
+            width: 100%;
+        }
+    }
+    .btn--black {
+        a {
+        }
+
+        &:hover {
+        }
+    }
+   
+    @media (max-width: 750px) {
+        .form-order {
+            &__inf {
+                height: 200px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__title {
+                font-size: 1.8rem;
+            }
+
+            &__subtitle {
+                padding: 10px 0 0 35px;
+            }
+            &__img {
+                padding: 50px 80px 0 20px;
+                width: 300px;
+                img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            &__price {
+                padding: 10px;
+                margin-top: 20px;
+                width: 130px;
+                font-size: 1.25rem;
+                span {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .timer {
+        &__title {
+            font-size: 1.75rem;
+            line-height: 28px;
+        }
+
+        &__items {
+            max-width: 80%;
+        }
+    }
+    .timer__name {
+        font-size: 1rem;
+        line-height: 19px;
+    }
+    .timer__value {
+        font-size: 1.8rem;
+        line-height: 43px;
+    }
+}
+@media (max-width: 550px) {
+    .timer {
+        padding-top: 10px;
+        &__items {
+            padding-top: 30px;
+            max-width: 80%;
+        }
+    }
+    .timer__name {
+        font-size: 0.8rem;
+        line-height: 19px;
+    }
+    .timer__value {
+        font-size: 1.5rem;
+        line-height: 43px;
+    }
+    .form-order {
+        &__inf {
+             height: 180px;   
+        }
+        &__title {
+            font-size: 1.8rem;
+        }
+
+        &__subtitle {
+            padding: 10px 0 0 35px;
+        }
+        &__img {
+           display: none;
+        }
+        &__price {
+            padding: 10px;
+            margin-top: 20px;
+            width: 130px;
+            font-size: 1.25rem;
+            span {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .timer {
+        &__items {
+            max-width: 90%;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .form-order {
+        &__inf {
+            height: 200px;
+        }
+        &__title {
+            margin-top:20px ;
+            font-size: 1.5rem;
+        }
+        &__subtitle {
+            padding: 8px 0 0 35px;
+        }
+        &__img {
+           display: none;
+        }
+        &__booking-title {
+                margin-top: 48px;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .form-order {
+        &__inf {
+            height: 200px;       
+        }
+        &__title {
+            margin-top:20px ;
+            font-size: 1.5rem;
+        }
+        &__subtitle {
+            padding: 8px 0 0 35px;
+        }
+        &__img {
+           display: none;
+        }
+        &__booking-title {
+                margin-top: 48px;
+        }
+        &__booking-input {
+            label {
+                span {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    
+}
